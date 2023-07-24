@@ -1,16 +1,92 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-	<link rel="stylesheet" href="styles.css">
-</head>
+<style>
+* {
+  box-sizing: border-box;
+}
 
+/* Define the header style */
+.header {
+  background-color: #011e29;
+  color: white;
+  padding: 15px;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* Define the column layout */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Define the article style */
+.article {
+  background-color: #f5f5f5;
+  margin: 10px;
+  padding: 10px;
+}
+
+/* Define the image style */
+.image {
+  width: 100%;
+  height: auto;
+}
+</style>
+</head>
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+<!-- Create the header -->
+<div class="header">
+  <h1>Shaw's News</h1>
+</div>
+
+<!-- Create the row -->
+<div class="row">
+
+  <!-- Create the left column -->
+  <div class="column">
+    <div class="article">
+      <h3>Latest Articles</h3>
+      <ul>
+        <li>Article 1</li>
+        <li>Article 2</li>
+        <li>Article 3</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Create the center column -->
+  <div class="column">
+    <div class="article">
+      <h2>Main Article</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis lorem quis nisi consequat fringilla. Morbi vitae lacus quis leo malesuada sagittis. Fusce euismod nisl ac augue lacinia, id aliquet leo tincidunt.</p>
+    </div>
+  </div>
+
+  <!-- Create the right column -->
+  <div class="column">
+    <div class="article">
+      <h3>Pictorial News</h3>
+      <img src="https://images.hindustantimes.com/img/2023/01/29/550x309/delhi_rains_1674974112847_1674981888135_1674981888135.jpeg" alt="People in park" class="image">
+      <img src="https://images.hindustantimes.com/img/2023/01/29/550x309/ADANI-INDIA-GAUTAM-ADANI-0_1675011651023_1675011651023_1675011672003_1675011672003.JPG" alt="Man working on laptop" class="image">
+	<img src="https://images.hindustantimes.com/img/2023/01/29/550x309/FRANCE-REFORM-PENSIONS-31_1675022359706_1675022359706_1675022383851_1675022383851.JPG" alt="Women in the car" class="image">
+
+    </div>
+  </div>
+
+</div>
 
 </body>
-
 </html>
+
+
