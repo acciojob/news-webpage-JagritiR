@@ -5,8 +5,9 @@
     }
     header {
 	 background-color: #011e29; 
-     color: white; 
-	text-align: center; 
+     color: white;
+	 text-align: center;
+	padding:10px;
     }
     .container {
       display: flex; 
@@ -47,9 +48,12 @@
 	text-align: center; 
 	width: 100%;
 	border-radius: 20px;
+	background-color: white; 
+
+
 
 }
     .pictorial-news-section>img {
-		margin: 5px;
+		margin: 10px;
 	}
 
